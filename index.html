@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LORA — Premium jewellery for the modern woman. Discover handcrafted gold, diamond, and pearl jewellery designed to celebrate your individuality and become part of your story.">
+  <meta name="theme-color" content="#FAF7F2">
+  <title>LORA — The Art of Fine Jewellery</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="LORA — The Art of Fine Jewellery">
+  <meta property="og:description" content="Discover timeless, elegantly crafted gold and diamond jewellery. Shop necklaces, rings, earrings, bracelets and more.">
+  <meta property="og:type" content="website">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════
+     ANNOUNCEMENT BAR
+════════════════════════════════════════════════ -->
+<div id="announcement-bar" role="banner" aria-label="Site announcement">
+  <div class="marquee-track" aria-hidden="true">
+    <span>A little luxury, made timeless</span>
+    <span>Free shipping on orders above ₹5,000</span>
+    <span>Complimentary gift wrapping on every order</span>
+    <span>New collection — Celestial Gold — now live</span>
+    <span>A little luxury, made timeless</span>
+    <span>Free shipping on orders above ₹5,000</span>
+    <span>Complimentary gift wrapping on every order</span>
+    <span>New collection — Celestial Gold — now live</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════ -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <!-- Logo -->
+    <a class="nav-logo" href="#hero" aria-label="LORA — Go to homepage">LORA</a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <!-- Search -->
+      <button id="search-btn" class="nav-icon-btn" aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+      <!-- Wishlist -->
+      <button class="nav-icon-btn" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <span id="wishlist-badge" class="cart-badge" aria-label="Wishlist items">0</span>
+      </button>
+      <!-- Cart -->
+      <button class="nav-icon-btn" data-open-cart aria-label="Shopping bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <span id="cart-badge" class="cart-badge" aria-live="polite" aria-label="Items in bag">0</span>
+      </button>
+      <!-- Hamburger -->
+      <button id="hamburger" class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Search overlay -->
+<div id="search-wrap" class="nav-search-wrap" role="search">
+  <div class="search-input-group">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18" aria-hidden="true" style="color:var(--mid-grey)">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input id="search-input" type="search" placeholder="Search jewellery, collections…" aria-label="Search products">
+    <button id="search-close" aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Mobile nav -->
+<nav id="mobile-nav" aria-label="Mobile navigation">
+  <ul class="mobile-nav-links" role="list">
+    <li><a href="#hero">Home <span>→</span></a></li>
+    <li><a href="#products">Shop <span>→</span></a></li>
+    <li><a href="#collections">Collections <span>→</span></a></li>
+    <li><a href="#story">Our Story <span>→</span></a></li>
+    <li><a href="#testimonials">Testimonials <span>→</span></a></li>
+    <li><a href="#contact">Contact <span>→</span></a></li>
+  </ul>
+  <div style="margin-top:auto;padding-top:2rem;border-top:1px solid var(--light-grey)">
+    <p style="font-size:.75rem;color:var(--mid-grey);letter-spacing:.1em">support@lora.com</p>
+    <p style="font-size:.75rem;color:var(--mid-grey);margin-top:.3rem">Mon – Sat · 10am – 7pm</p>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<main>
+<section id="hero" aria-label="Hero section">
+  <!-- Left: editorial image -->
+  <div class="hero-image-side">
+    <img
+      src="images/hero_bg.png"
+      alt="A stunning gold necklace resting on champagne silk — LORA fine jewellery"
+      width="960" height="1200"
+    >
+    <div class="hero-image-overlay" aria-hidden="true"></div>
+  </div>
+
+  <!-- Right: content -->
+  <div class="hero-content-side">
+    <span class="hero-eyebrow">The Art of Fine Jewellery</span>
+    <h1 class="hero-heading">Elegance<br>That Lasts <em>Forever.</em></h1>
+    <p class="hero-desc">Discover thoughtfully curated jewellery designed to celebrate your individuality, preserve your memories, and become part of your story.</p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn btn-gold">Explore Collection</a>
+      <a href="#story"    class="btn btn-outline">Discover Our Story</a>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span>Scroll to explore</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     COLLECTIONS
+════════════════════════════════════════════════ -->
+<section id="collections" class="section-pad" aria-label="Shop by collection">
+  <div class="container">
+    <header class="section-header">
+      <span class="eyebrow">Curated Worlds</span>
+      <h2 class="section-heading">Shop by Collection</h2>
+      <div class="divider center"></div>
+    </header>
+    <div id="collections-grid" class="collections-grid" role="list" aria-label="Jewellery collections"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     FEATURED PRODUCTS
+════════════════════════════════════════════════ -->
+<section id="products" class="section-pad" aria-label="Featured products">
+  <div class="container">
+    <header class="section-header">
+      <span class="eyebrow">The Edit</span>
+      <h2 class="section-heading">Featured Pieces</h2>
+      <div class="divider center"></div>
+    </header>
+
+    <!-- Toolbar -->
+    <div class="products-toolbar">
+      <div class="filter-tabs" role="tablist" aria-label="Filter by category">
+        <button class="filter-tab active" data-filter="all"       role="tab" aria-selected="true">All</button>
+        <button class="filter-tab"        data-filter="necklaces" role="tab" aria-selected="false">Necklaces</button>
+        <button class="filter-tab"        data-filter="rings"     role="tab" aria-selected="false">Rings</button>
+        <button class="filter-tab"        data-filter="earrings"  role="tab" aria-selected="false">Earrings</button>
+        <button class="filter-tab"        data-filter="bracelets" role="tab" aria-selected="false">Bracelets</button>
+      </div>
+      <label for="sort-select" class="sr-only">Sort products</label>
+      <select id="sort-select" class="sort-select">
+        <option value="popularity">Most Popular</option>
+        <option value="newest">New Arrivals First</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+    </div>
+
+    <!-- Grid -->
+    <div id="products-grid" class="products-grid" role="list" aria-label="Product listing"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     BRAND STORY
+════════════════════════════════════════════════ -->
+<section id="story" class="section-pad" aria-label="Brand story">
+  <div class="container">
+    <div class="story-grid">
+      <!-- Image -->
+      <div class="story-image">
+        <img
+          src="images/collection_gold.png"
+          alt="LORA gold jewellery collection — timeless and refined"
+          loading="lazy"
+        >
+        <div class="story-image-frame" aria-hidden="true"></div>
+      </div>
+      <!-- Content -->
+      <div class="story-body">
+        <span class="eyebrow">Our Philosophy</span>
+        <h2 class="section-heading">More Than Jewellery.<br>A Part of Your Story.</h2>
+        <div class="divider"></div>
+        <p class="story-text">
+          At LORA, we believe jewellery is more than an accessory. It holds memories, celebrates milestones, and expresses the beauty of individuality. Our collections bring together timeless inspiration and contemporary elegance to create pieces you will treasure for years to come.
+        </p>
+
+        <div class="brand-values">
+          <div class="brand-value">
+            <div class="brand-value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div>
+              <p class="brand-value-title">Timeless Design</p>
+              <p class="brand-value-desc">Every piece is conceived for longevity — inspired by the past, refined for today.</p>
+            </div>
+          </div>
+          <div class="brand-value">
+            <div class="brand-value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="brand-value-title">Thoughtful Craftsmanship</p>
+              <p class="brand-value-desc">Meticulous attention to detail in every curve, stone setting, and finish.</p>
+            </div>
+          </div>
+          <div class="brand-value">
+            <div class="brand-value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="brand-value-title">Meaningful Moments</p>
+              <p class="brand-value-desc">Jewellery that marks life's most beautiful and significant celebrations.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-gold">Discover Our Philosophy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     VIDEO SECTION
+════════════════════════════════════════════════ -->
+<section id="video-section" aria-label="Promotional video">
+  <div class="video-section-inner">
+    <header class="video-header">
+      <span class="eyebrow">A Moment of LORA</span>
+      <h2 class="section-heading">Cinematic. Timeless. Unforgettable.</h2>
+      <p>Discover the details, the brilliance, and the beauty behind every unforgettable look.</p>
+    </header>
+
+    <div class="video-wrapper container" id="video-wrapper">
+      <!-- Promotional video -->
+      <video
+        id="promo-video"
+        class="promo-video has-src"
+        src="video/LORA_luxury_jewellery_advertisement_20261026230601.mp4"
+        playsinline
+        autoplay
+        muted
+        loop
+        preload="auto"
+        aria-label="LORA luxury jewellery promotional campaign video"
+      >
+        Your browser does not support the video element.
+      </video>
+
+      <!-- Custom controls (shown when video has src) -->
+      <div class="video-controls" id="video-controls" aria-label="Video controls">
+        <button class="vid-btn" id="vid-play" aria-label="Play">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </button>
+        <div class="video-progress" id="vid-progress" role="progressbar" aria-label="Video progress">
+          <div class="video-progress-fill" id="vid-progress-fill"></div>
+        </div>
+        <span class="video-time" id="vid-time">0:00 / 0:00</span>
+        <button class="vid-btn" id="vid-mute" aria-label="Mute">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="video-section-footer">
+      <p>"Elegance That Lasts Forever." — LORA</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════ -->
+<section id="testimonials" class="section-pad" aria-label="Customer testimonials">
+  <div class="container">
+    <header class="section-header">
+      <span class="eyebrow">Worn with Love</span>
+      <h2 class="section-heading">What Our Customers Say</h2>
+      <div class="divider center"></div>
+      <p style="font-size:.78rem;color:var(--mid-grey);margin-top:.5rem">
+        Demonstration testimonials — real customer reviews will appear here as they come in.
+      </p>
+    </header>
+    <div class="testimonials-track-wrap" id="testimonials-track-wrap">
+      <div class="testimonials-track" id="testimonials-track" role="list" aria-label="Customer testimonials carousel"></div>
+    </div>
+    <nav class="testimonials-nav" aria-label="Testimonials navigation">
+      <button class="testimonial-arrow" id="t-prev" aria-label="Previous testimonials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="testimonial-dots" id="t-dots" role="tablist" aria-label="Go to testimonial"></div>
+      <button class="testimonial-arrow" id="t-next" aria-label="Next testimonials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </nav>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     API SECTION — Featured Finds
+════════════════════════════════════════════════ -->
+<section id="api-section" class="section-pad" aria-label="Featured Finds — API demonstration">
+  <div class="container">
+    <header class="api-header">
+      <div class="api-label">
+        <span class="api-dot"></span>
+        Live API Demo · DummyJSON
+      </div>
+      <span class="eyebrow">Discover More</span>
+      <h2 class="section-heading">Featured Finds</h2>
+      <div class="divider center"></div>
+      <p style="font-size:.82rem;color:var(--mid-grey);max-width:500px;margin-inline:auto;margin-top:.5rem;line-height:1.7">
+        Products below are fetched in real time from the <a href="https://dummyjson.com" style="color:var(--gold);text-decoration:underline" target="_blank" rel="noopener">DummyJSON API</a>. Prices shown in ₹ (USD × 83). This section demonstrates a live API integration for the AI case study.
+      </p>
+    </header>
+    <div id="api-products-grid" class="api-products-grid" role="list" aria-label="API product listing" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     NEW ARRIVALS
+════════════════════════════════════════════════ -->
+<section id="new-arrivals" class="section-pad" aria-label="New arrivals">
+  <div class="container">
+    <header class="section-header">
+      <span class="eyebrow">Just Landed</span>
+      <h2 class="section-heading">New Arrivals</h2>
+      <div class="divider center"></div>
+    </header>
+    <div id="new-arrivals-grid" class="new-arrivals-grid" role="list" aria-label="New arrival products"></div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="#products" class="btn btn-outline">View All Pieces</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     EDITORIAL GALLERY
+════════════════════════════════════════════════ -->
+<section id="gallery" class="section-pad" aria-label="Editorial gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <div>
+        <span class="eyebrow">The LORA Edit</span>
+        <h2 class="section-heading" style="font-size:clamp(1.6rem,3vw,2.4rem)">As Seen on You</h2>
+      </div>
+      <a href="#contact" class="btn btn-outline">Share Your Look</a>
+    </div>
+    <div id="gallery-grid" class="gallery-grid" aria-label="Editorial jewellery gallery"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     NEWSLETTER
+════════════════════════════════════════════════ -->
+<section id="newsletter" aria-label="Newsletter signup">
+  <div class="newsletter-inner container">
+    <span class="eyebrow" style="color:var(--gold-light)">Stay Connected</span>
+    <h2 class="section-heading">The LORA Letter</h2>
+    <div class="divider center" style="background:rgba(255,255,255,.2)"></div>
+    <p>New collections, exclusive previews, and stories worth reading — delivered to your inbox.</p>
+    <form id="newsletter-form" class="newsletter-form" novalidate aria-label="Newsletter subscription form">
+      <label for="newsletter-email" class="sr-only">Email address</label>
+      <input id="newsletter-email" type="email" placeholder="Your email address" required autocomplete="email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="newsletter-success" class="newsletter-success">Welcome to LORA. We're so glad you're here. ✦</p>
+    <p style="font-size:.7rem;color:rgba(255,255,255,.25);margin-top:1rem">No spam, ever. Unsubscribe at any time.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section id="contact" class="section-pad" aria-label="Contact us">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="contact-info">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="section-heading">We Would Love to Hear From You.</h2>
+        <div class="divider"></div>
+        <p>Whether you have a question about an order, need styling advice, or want to inquire about a custom commission — we're here for you.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <div>
+              <p class="contact-detail-label">Email</p>
+              <p class="contact-detail-value">hello@lora.com <em style="font-size:.7rem;color:var(--mid-grey)">(placeholder — replace before launch)</em></p>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </span>
+            <div>
+              <p class="contact-detail-label">Phone</p>
+              <p class="contact-detail-value">+91 98000 00000 <em style="font-size:.7rem;color:var(--mid-grey)">(placeholder)</em></p>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </span>
+            <div>
+              <p class="contact-detail-label">Hours</p>
+              <p class="contact-detail-value">Mon – Sat · 10am – 7pm IST</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 20l4-9m0 0c0-1.5 1.5-3 3-3s3 1.5 3 3-1.5 3-3 3a3 3 0 0 1-1.5-.4M12 11V3"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="contact-name">Full Name</label>
+            <input id="contact-name" type="text" placeholder="Your full name" required autocomplete="name">
+            <span class="form-error-msg" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input id="contact-email" type="email" placeholder="you@example.com" required autocomplete="email">
+            <span class="form-error-msg" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <select id="contact-subject" required>
+            <option value="">Select a topic…</option>
+            <option>Order Enquiry</option>
+            <option>Product Question</option>
+            <option>Custom Commission</option>
+            <option>Styling Advice</option>
+            <option>Returns & Exchanges</option>
+            <option>Other</option>
+          </select>
+          <span class="form-error-msg" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" rows="5" placeholder="Tell us how we can help…" required></textarea>
+          <span class="form-error-msg" role="alert"></span>
+        </div>
+        <div class="form-submit-wrap">
+          <button type="submit" class="btn btn-gold" id="contact-submit">Send Message</button>
+          <span id="form-status" class="form-status" role="status" aria-live="polite"></span>
+        </div>
+        <p style="font-size:.72rem;color:var(--mid-grey);margin-top:.5rem">
+          Note: Form submissions are currently in demo mode. Wire up a backend (e.g. <a href="https://formspree.io" style="color:var(--gold)" target="_blank" rel="noopener">Formspree</a>) to enable real email delivery.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════════ -->
+<section id="faq" class="section-pad" aria-label="Frequently asked questions">
+  <div class="container" style="max-width:800px">
+    <header class="section-header">
+      <span class="eyebrow">Good to Know</span>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+      <div class="divider center"></div>
+    </header>
+    <div id="faq-list" class="faq-list"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <p class="footer-logo">LOR<span>A</span></p>
+        <p class="footer-tagline">The Art of Fine Jewellery</p>
+        <p>We craft jewellery that holds meaning, marks moments, and becomes part of your story. Timeless by design, personal by nature.</p>
+        <div class="social-links" style="margin-top:1.2rem" aria-label="Social media">
+          <a href="#" class="social-link" style="border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.5)" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" style="border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.5)" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 20l4-9m0 0c0-1.5 1.5-3 3-3s3 1.5 3 3-1.5 3-3 3a3 3 0 0 1-1.5-.4M12 11V3"/></svg>
+          </a>
+          <a href="#" class="social-link" style="border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.5)" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Shop -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Shop</h3>
+        <ul role="list">
+          <li><a href="#products">All Jewellery</a></li>
+          <li><a href="#products">Necklaces</a></li>
+          <li><a href="#products">Rings</a></li>
+          <li><a href="#products">Earrings</a></li>
+          <li><a href="#products">Bracelets</a></li>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
+        </ul>
+      </div>
+      <!-- Help -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Help</h3>
+        <ul role="list">
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faq">Shipping & Returns</a></li>
+          <li><a href="#faq">Jewellery Care Guide</a></li>
+          <li><a href="#faq">Size Guide</a></li>
+          <li><a href="#contact">Custom Orders</a></li>
+        </ul>
+      </div>
+      <!-- Company -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Company</h3>
+        <ul role="list">
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#story">Our Philosophy</a></li>
+          <li><a href="#gallery">The Edit</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contact">Press</a></li>
+          <li><a href="#contact">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>© 2026 LORA Fine Jewellery. All rights reserved.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Accessibility</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════════
+     CART DRAWER
+════════════════════════════════════════════════ -->
+<div id="cart-overlay" aria-hidden="true"></div>
+<aside id="cart-drawer" aria-label="Shopping bag" aria-modal="true" role="dialog">
+  <div class="cart-drawer-header">
+    <h2>Your Bag <span id="cart-header-count"></span></h2>
+    <button id="close-cart" class="close-cart" aria-label="Close bag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div id="cart-empty" class="cart-empty">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <path d="M16 10a4 4 0 0 1-8 0"/>
+    </svg>
+    <h3>Your bag is empty</h3>
+    <p>Discover our collections and add a piece you love.</p>
+    <button id="cart-continue" class="btn btn-gold" style="margin-top:.5rem">Continue Shopping</button>
+  </div>
+  <div id="cart-items" class="cart-drawer-items" aria-live="polite"></div>
+  <div id="cart-footer" class="cart-drawer-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <strong id="cart-subtotal-val">₹0</strong>
+    </div>
+    <button class="cart-checkout-btn" onclick="alert('Checkout integration coming soon. Connect a payment gateway (Razorpay / Stripe) to enable real purchases.')">
+      Proceed to Checkout
+    </button>
+    <span class="cart-continue" id="cart-continue-link">← Continue Shopping</span>
+  </div>
+</aside>
+
+<!-- ════════════════════════════════════════════════
+     QUICK VIEW MODAL
+════════════════════════════════════════════════ -->
+<div id="quickview-overlay" role="dialog" aria-modal="true" aria-label="Product quick view">
+  <div id="quickview-modal"></div>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<!-- TOAST -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- JS -->
+<script src="js/main.js" defer></script>
+</body>
+</html>
